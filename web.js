@@ -43,6 +43,8 @@ function loop(host) {
 
 	info.count++;
 	setTimeout(function () {loop(host);}, 1000);
-}
+};
 
-hosts.forEach(function (host) { loop(host); });
+for (host of hosts) {
+	loop(host);
+};
