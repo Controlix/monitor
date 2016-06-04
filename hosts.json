@@ -1,0 +1,12 @@
+[
+	{
+		"host": "nieuw.ad.nl",
+	  	"port": 80,
+	  	"url": "/monitor"	
+	},
+	{
+		"host": "localhost",
+		"port": 8090,
+		"url": "/"
+	}
+]
