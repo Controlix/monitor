@@ -1,5 +1,6 @@
 var express = require('express');
 var request = require('request');
+var cons = require('consolidate');
 var hosts = require('./hosts.json');
 
 var app = express();
@@ -8,9 +9,20 @@ var info = {};
 info.count = 0;
 info.hosts = {};
 
+app.engine('mustache', cons.mustache);
+app.set('view engine', 'mustache');
+
 app.get('/', function (req, res) {
-  res.send(info);
+	res.render('index', {count: info.count, hosts: toArray(info.hosts)});
+  	// res.send(info);
 });
+
+function toArray(hosts) {
+	return Object.keys(hosts).map(function(key) {
+		return {name: key, status: hosts[key].status, app: hosts[key].app};
+	});
+
+};
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');

@@ -1,0 +1,16 @@
+<html>
+	<head><title>Node status</title></head>
+	<body>
+		<h1>Status of the nodes</h1>
+		<div>
+		{{ ^hosts }}No hosts to monitor!{{ /hosts }}
+		<ul>
+		{{ #hosts }}
+			<li>{{name}} - {{ #app }} {{version }} {{ /app }} : {{status}}</li>
+		{{ /hosts }}
+		</ul>
+		</div>
+
+		<div style="position: absolute; bottom: 0; height: 40px;">Count {{ count }}</div>
+	</body>
+</html>
