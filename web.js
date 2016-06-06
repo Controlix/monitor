@@ -30,6 +30,7 @@ app.listen(3000, function () {
 
 function loop(host) {
 	info.hosts[host.host] = {};
+	console.log('checking ' + host.host + '...');
 
 	var req = request.defaults({
       baseUrl: 'http://' + host.host + ':' + host.port + host.url
@@ -54,7 +55,7 @@ function loop(host) {
 	  });
 
 	info.count++;
-	setTimeout(function () {loop(host);}, 1000);
+	setTimeout(function () {loop(host);}, 5000);
 };
 
 for (host of hosts) {

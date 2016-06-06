@@ -1,12 +1,43 @@
 [
 	{
-		"host": "nieuw.ad.nl",
+		"host": "http://ad.dppuwejp061.direct.persgroep.be/",
 	  	"port": 80,
 	  	"url": "/monitor"	
 	},
 	{
-		"host": "localhost",
-		"port": 8090,
-		"url": "/"
+		"host": "http://ad.dppuwejp062.direct.persgroep.be/",
+	  	"port": 80,
+	  	"url": "/monitor"	
+	},
+	{
+		"host": "http://ad.dppuwejp063.direct.persgroep.be/",
+	  	"port": 80,
+	  	"url": "/monitor"	
+	},
+	{
+		"host": "http://ad.dppuwejp064.direct.persgroep.be/",
+	  	"port": 80,
+	  	"url": "/monitor"	
+	},
+	{
+		"host": "http://ad.dppuwejp067.direct.persgroep.be/",
+	  	"port": 80,
+	  	"url": "/monitor"	
+	},
+	{
+		"host": "http://ad.dppuwejp068.direct.persgroep.be/",
+	  	"port": 80,
+	  	"url": "/monitor"	
+	},
+	{
+		"host": "http://ad.dppuwejp069.direct.persgroep.be/",
+	  	"port": 80,
+	  	"url": "/monitor"	
+	},
+	{
+		"host": "http://ad.dppuwejp070.direct.persgroep.be/",
+	  	"port": 80,
+	  	"url": "/monitor"	
 	}
+
 ]
