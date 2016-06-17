@@ -1,5 +1,5 @@
-Usage:
+### Run NodeJS
 
-npm install
-
-node web
+- `cd monitor`
+- `npm install`
+- `npm start`
