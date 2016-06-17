@@ -1,43 +1,43 @@
 [
 	{
-		"host": "http://ad.dppuwejp061.direct.persgroep.be/",
+		"host": "http://v1ad.dppuwejp061.direct.persgroep.be",
 	  	"port": 80,
-	  	"url": "/monitor"	
+	  	"url": "/monitor"
 	},
 	{
-		"host": "http://ad.dppuwejp062.direct.persgroep.be/",
-	  	"port": 80,
-	  	"url": "/monitor"	
+		"host": "http://v1ad.dppuwejp062.direct.persgroep.be",
+	  	"port": 805,
+	  	"url": "/monitor"
 	},
 	{
-		"host": "http://ad.dppuwejp063.direct.persgroep.be/",
+		"host": "http://v1ad.dppuwejp063.direct.persgroep.be",
 	  	"port": 80,
-	  	"url": "/monitor"	
+	  	"url": "/monitor"
 	},
 	{
-		"host": "http://ad.dppuwejp064.direct.persgroep.be/",
+		"host": "http://v1ad.dppuwejp064.direct.persgroep.be",
 	  	"port": 80,
-	  	"url": "/monitor"	
+	  	"url": "/monitor"
 	},
 	{
-		"host": "http://ad.dppuwejp067.direct.persgroep.be/",
+		"host": "http://v1ad.dppuwejp067.direct.persgroep.be",
 	  	"port": 80,
-	  	"url": "/monitor"	
+	  	"url": "/monitor"
 	},
 	{
-		"host": "http://ad.dppuwejp068.direct.persgroep.be/",
+		"host": "http://v1ad.dppuwejp068.direct.persgroep.be",
 	  	"port": 80,
-	  	"url": "/monitor"	
+	  	"url": "/monitor"
 	},
 	{
-		"host": "http://ad.dppuwejp069.direct.persgroep.be/",
+		"host": "http://v1ad.dppuwejp069.direct.persgroep.be",
 	  	"port": 80,
-	  	"url": "/monitor"	
+	  	"url": "/monitor"
 	},
 	{
-		"host": "http://ad.dppuwejp070.direct.persgroep.be/",
+		"host": "http://v1ad.dppuwejp070.direct.persgroep.be",
 	  	"port": 80,
-	  	"url": "/monitor"	
+	  	"url": "/monitor"
 	}
 
 ]

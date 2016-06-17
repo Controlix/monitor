@@ -5,59 +5,59 @@ var hosts = require('./hosts.json');
 
 var app = express();
 
-var info = {};
-info.count = 0;
-info.hosts = {};
+var health = [];
 
 app.engine('mustache', cons.mustache);
 app.set('view engine', 'mustache');
 
 app.get('/', function (req, res) {
-	res.render('index', {count: info.count, hosts: toArray(info.hosts)});
-  	// res.send(info);
+	res.render('index', {hosts: health});
 });
-
-function toArray(hosts) {
-	return Object.keys(hosts).map(function(key) {
-		return {name: key, status: hosts[key].status, app: hosts[key].app};
-	});
-
-};
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
 
 function loop(host) {
-	info.hosts[host.host] = {};
-	console.log('checking ' + host.host + '...');
 
 	var req = request.defaults({
-      baseUrl: 'http://' + host.host + ':' + host.port + host.url
+      baseUrl: host.def.host + ':' + host.def.port + host.def.url,
+			timeout: 1000
 	});
 
+	var buf = [];
 	req
 	  .get('/health')
 	  .on('data', function (data) {
-	  	info.hosts[host.host].status = JSON.parse(data).status;
+			buf.push(data);
 	  })
+		.on('end', function() {
+			host.status = JSON.parse(buf).status;
+		})
 	  .on('error', function(error) {
-	  	info.hosts[host.host].status = 'UNKNOWN';
+	  	host.status = 'UNKNOWN';
 	  });
 
+	var buf2 = [];
 	req
 	  .get('/info')
 	  .on('data', function (data) {
-	  	info.hosts[host.host].app = JSON.parse(data).app;
+			buf2.push(data);
 	  })
+		.on('end', function() {
+			host.app = JSON.parse(buf2).app;
+		})
 	  .on('error', function(error) {
-	  	info.hosts[host.host].app = 'UNKNOWN';
+	  	host.app = 'UNKNOWN';
 	  });
 
-	info.count++;
 	setTimeout(function () {loop(host);}, 5000);
 };
 
-for (host of hosts) {
-	loop(host);
+for (e of hosts) {
+	health.push({def: e, app: 'UNKNOWN', status: 'UNKNOWN'});
 };
+
+for (h of health) {
+	loop(h);
+}
