@@ -11,6 +11,10 @@ app.engine('mustache', cons.mustache);
 app.set('view engine', 'mustache');
 
 app.get('/', function (req, res) {
+	if (req.query.view === 'json') {
+		res.json({hosts: health});
+	}
+
 	res.render('index', {hosts: health});
 });
 
@@ -21,7 +25,7 @@ app.listen(3000, function () {
 function loop(host) {
 
 	var req = request.defaults({
-      baseUrl: host.def.host + ':' + host.def.port + host.def.url,
+      baseUrl: host.def.host + ':' + (host.def.port || 80) + (host.def.url || ''),
 			timeout: 1000
 	});
 
@@ -35,7 +39,7 @@ function loop(host) {
 			host.status = JSON.parse(buf).status;
 		})
 	  .on('error', function(error) {
-	  	host.status = 'UNKNOWN';
+	  	host.status = 'UNKNOWN (' + error.code + ')';
 	  });
 
 	var buf2 = [];
