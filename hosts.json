@@ -145,5 +145,11 @@
 	},
 	{
 		"host": "http://adsearchservice.dppuwejp020.direct.persgroep.be"
+	},
+	{
+		"host": "http://adsearchservice.dppuwejp121.direct.persgroep.be"
+	},
+	{
+		"host": "http://adsearchservice.dppuwejp122.direct.persgroep.be"
 	}
 ]
