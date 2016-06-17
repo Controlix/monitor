@@ -32,68 +32,84 @@
 		"url": "/mobile/monitor"
 	},
 	{
-		"host": "http://v1ad.dppuwejp061.direct.persgroep.be",
+		"host": "http://ad.dppuwejp061.direct.persgroep.be",
 		"url": "/monitor"
 	},
 	{
-		"host": "http://v1ad.dppuwejp062.direct.persgroep.be",
+		"host": "http://ad.dppuwejp062.direct.persgroep.be",
 		"url": "/monitor"
 	},
 	{
-		"host": "http://v1ad.dppuwejp063.direct.persgroep.be",
+		"host": "http://ad.dppuwejp063.direct.persgroep.be",
 		"url": "/monitor"
 	},
 	{
-		"host": "http://v1ad.dppuwejp064.direct.persgroep.be",
+		"host": "http://ad.dppuwejp064.direct.persgroep.be",
 		"url": "/monitor"
 	},
 	{
-		"host": "http://v1ad.dppuwejp067.direct.persgroep.be",
+		"host": "http://ad.dppuwejp067.direct.persgroep.be",
 		"url": "/monitor"
 	},
 	{
-		"host": "http://v1ad.dppuwejp068.direct.persgroep.be",
+		"host": "http://ad.dppuwejp068.direct.persgroep.be",
 		"url": "/monitor"
 	},
 	{
-		"host": "http://v1ad.dppuwejp069.direct.persgroep.be",
+		"host": "http://ad.dppuwejp069.direct.persgroep.be",
 		"port": 80,
 		"url": "/monitor"
 	},
 	{
-		"host": "http://v1ad.dppuwejp070.direct.persgroep.be",
+		"host": "http://ad.dppuwejp070.direct.persgroep.be",
 		"url": "/monitor"
 	},
 	{
-		"host": "http://v1adarticleservice.dppuwejp019.direct.persgroep.be",
+		"host": "http://adarticleservice.dppuwejp019.direct.persgroep.be",
 		"url": "/rest"
 	},
 	{
-		"host": "http://v1adarticleservice.dppuwejp020.direct.persgroep.be",
+		"host": "http://adarticleservice.dppuwejp020.direct.persgroep.be",
 		"url": "/rest"
 	},
 	{
-		"host": "http://v1adarticleservice.dppuwejp121.direct.persgroep.be",
+		"host": "http://adarticleservice.dppuwejp121.direct.persgroep.be",
 		"url": "/rest"
 	},
 	{
-		"host": "http://v1adarticleservice.dppuwejp122.direct.persgroep.be",
+		"host": "http://adarticleservice.dppuwejp122.direct.persgroep.be",
 		"url": "/rest"
 	},
 	{
-		"host": "http://v1adteaserservice.dppuwejp019.direct.persgroep.be",
+		"host": "http://adarticleservice.dppuwejp123.direct.persgroep.be",
 		"url": "/rest"
 	},
 	{
-		"host": "http://v1adteaserservice.dppuwejp020.direct.persgroep.be",
+		"host": "http://adarticleservice.dppuwejp124.direct.persgroep.be",
 		"url": "/rest"
 	},
 	{
-		"host": "http://v1adteaserservice.dppuwejp121.direct.persgroep.be",
+		"host": "http://adteaserservice.dppuwejp019.direct.persgroep.be",
 		"url": "/rest"
 	},
 	{
-		"host": "http://v1adteaserservice.dppuwejp122.direct.persgroep.be",
+		"host": "http://adteaserservice.dppuwejp020.direct.persgroep.be",
+		"url": "/rest"
+	},
+	{
+		"host": "http://adteaserservice.dppuwejp121.direct.persgroep.be",
+		"url": "/rest"
+	},
+	{
+		"host": "http://adteaserservice.dppuwejp122.direct.persgroep.be",
+		"url": "/rest"
+	},
+	{
+		"host": "http://adteaserservice.dppuwejp123.direct.persgroep.be",
+		"url": "/rest"
+	},
+	{
+		"host": "http://adteaserservice.dppuwejp124.direct.persgroep.be",
 		"url": "/rest"
 	},
 	{
