@@ -19,41 +19,47 @@ app.get('/', function (req, res) {
 });
 
 app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
+  console.log('Monitoring app listening on port 3000!');
 });
 
 function loop(host) {
 
 	var req = request.defaults({
       baseUrl: host.def.host + ':' + (host.def.port || 80) + (host.def.url || ''),
-			timeout: 1000
+			timeout: 1000,
+			json: true
 	});
 
 	var buf = [];
 	req
 	  .get('/health')
-	  .on('data', function (data) {
-			buf.push(data);
-	  })
-		.on('end', function() {
-			host.status = JSON.parse(buf).status;
+		.on('response', function(res) {
+				if (res.statusCode !== 200) {
+					host.status = 'UNKNOWN (' + res.statusCode + ')';
+				} else {
+					res.on('data', function(data) {
+						host.status = JSON.parse(data).status;
+					})
+				}
 		})
 	  .on('error', function(error) {
 	  	host.status = 'UNKNOWN (' + error.code + ')';
 	  });
 
-	var buf2 = [];
-	req
-	  .get('/info')
-	  .on('data', function (data) {
-			buf2.push(data);
-	  })
-		.on('end', function() {
-			host.app = JSON.parse(buf2).app;
-		})
-	  .on('error', function(error) {
-	  	host.app = 'UNKNOWN';
-	  });
+		req
+			.get('/info')
+			.on('response', function(res) {
+					if (res.statusCode !== 200) {
+						host.status = 'UNKNOWN (' + res.statusCode + ')';
+					} else {
+						res.on('data', function(data) {
+							host.app = JSON.parse(data).app;
+						})
+					}
+			})
+			.on('error', function(error) {
+				host.app = 'UNKNOWN';
+			});
 
 	setTimeout(function () {loop(host);}, 5000);
 };
