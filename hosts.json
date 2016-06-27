@@ -65,14 +65,6 @@
 		"url": "/monitor"
 	},
 	{
-		"host": "http://adarticleservice.dppuwejp019.direct.persgroep.be",
-		"url": "/rest"
-	},
-	{
-		"host": "http://adarticleservice.dppuwejp020.direct.persgroep.be",
-		"url": "/rest"
-	},
-	{
 		"host": "http://adarticleservice.dppuwejp121.direct.persgroep.be",
 		"url": "/rest"
 	},
@@ -86,14 +78,6 @@
 	},
 	{
 		"host": "http://adarticleservice.dppuwejp124.direct.persgroep.be",
-		"url": "/rest"
-	},
-	{
-		"host": "http://adteaserservice.dppuwejp019.direct.persgroep.be",
-		"url": "/rest"
-	},
-	{
-		"host": "http://adteaserservice.dppuwejp020.direct.persgroep.be",
 		"url": "/rest"
 	},
 	{
@@ -113,14 +97,6 @@
 		"url": "/rest"
 	},
 	{
-		"host": "http://admediaservice.dppuwejp019.direct.persgroep.be",
-		"url": "/rest"
-	},
-	{
-		"host": "http://admediaservice.dppuwejp020.direct.persgroep.be",
-		"url": "/rest"
-	},
-	{
 		"host": "http://admediaservice.dppuwejp121.direct.persgroep.be",
 		"url": "/rest"
 	},
@@ -129,24 +105,10 @@
 		"url": "/rest"
 	},
 	{
-		"host": "http://adconfigservice.dppuwejp019.direct.persgroep.be"
-	},
-	{
-		"host": "http://adconfigservice.dppuwejp020.direct.persgroep.be"
-	},
-	{
 		"host": "http://adconfigservice.dppuwejp121.direct.persgroep.be"
 	},
 	{
 		"host": "http://adconfigservice.dppuwejp122.direct.persgroep.be"
-	},
-	{
-		"host": "http://adnavigationservice.dppuwejp019.direct.persgroep.be",
-		"url": "/rest"
-	},
-	{
-		"host": "http://adnavigationservice.dppuwejp020.direct.persgroep.be",
-		"url": "/rest"
 	},
 	{
 		"host": "http://adnavigationservice.dppuwejp121.direct.persgroep.be",
@@ -155,12 +117,6 @@
 	{
 		"host": "http://adnavigationservice.dppuwejp122.direct.persgroep.be",
 		"url": "/rest"
-	},
-	{
-		"host": "http://adsearchservice.dppuwejp019.direct.persgroep.be"
-	},
-	{
-		"host": "http://adsearchservice.dppuwejp020.direct.persgroep.be"
 	},
 	{
 		"host": "http://adsearchservice.dppuwejp121.direct.persgroep.be"
